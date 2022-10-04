@@ -45,6 +45,9 @@ nav h1 {
 
 
 
+
+
+
 /*MENU*/
 input {
     display: none;
@@ -72,19 +75,19 @@ label {
 
     display: flex;
     list-style: none;
-    margin: 0px auto;
+    margin: 0% auto;
     width: auto;
     font-size: 1.5em;
     padding: 2%;
     height: 100%;
+    justify-content: center;
+    align-items: center;
 
 }
 .menu ul li:hover {
     background-color: #26798e;
 }
-.menu > li{
-    float: left;
-}
+
 .menu a {
     text-decoration: none;
     color: #ffffff;
@@ -94,9 +97,26 @@ label {
 
 
 
+
+
+
+
+
 /*MEDIA QUERY*/
 
 @media all and (max-width: 600px) {
+
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    input {
+        width: 10%;
+        height: 100%;
+    }
     input:checked ~ ul {
         display: block;
     }
@@ -104,7 +124,7 @@ label {
         background: #26798e;
     }
     label:hover{
-        background: grey;
+        background: rgb(100, 137, 131);
     }
     .menu li {
         margin: 0;
@@ -112,17 +132,24 @@ label {
     label {
         box-sizing: border-box;
         display: block;
-        border: 1px solid #1111;
         border-radius: 5%;
+        width: 10%;
+        height: 10%;
         line-height: 30px;
         font-weight: bold;
+        text-align: center;
         user-select: none;
-        background-color: cadetblue;
+        background-color: black;
+        color: white;
 
     }
-    ul{
+    .menu ul{
         display: none;
-        background-color: white;
+        background-color: #63caa7;
+    }
+    .menu ul li a{
+        text-decoration: none;
+
     }
 
 
@@ -144,18 +171,37 @@ body{
 }
 /* MAIN */
 main{
+    display: flex;
     position: relative;
+    justify-content: center;
 }
+
 .contenedor-main img {
     display: block;
-    width: 10%;
+    width: 18%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
-    margin-top: 2%;
+    margin-top: 2%
 }
 
+.div-section {
+    display: flex;
+    justify-content: center;
+}
+.section-items{
+    display: flex;
+    justify-content: space-between;
+    background-color: floralwhite;
+    border: 1px wheat solid;
+    margin: 2%;
+    font-size: 1em;
+    align-items: stretch;
+    text-align: center;
+    flex-direction: column;
+    padding: 2%;
+}
 
 
 
@@ -184,7 +230,8 @@ footer{
     display: flex;
     padding: 1rem;
     justify-content: space-around;
-    margin: 2rem;;
+    margin: 2rem;
+    position: relative;
 }
 
 .footer-redes a{
@@ -206,9 +253,10 @@ footer{
 }
 .footer-redes a:hover{
     transform: scale(1.2);
-
 }
 .footer-bottom{
+    display: flex;
+    justify-content: center;
     background: #111;
     width:100%;
     height: auto;
