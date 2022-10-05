@@ -129,7 +129,9 @@ main{
     padding-top: 15%;
     padding-bottom: 5%
 }
-
+.title {
+    padding-bottom: inherit;
+}
 .contenedor-section {
     display: flex;
     justify-content: space-around;
