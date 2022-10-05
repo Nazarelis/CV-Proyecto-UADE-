@@ -135,29 +135,72 @@ main{
     justify-content: space-around;
     gap: 5%;
     width: 100%;
+    align-items: center;
 }
-#Foto {
-    display: flex;
-    width: 30%;
-    border-radius: 50%;
 
-}
-/* .contenedor-img{
+.contenedor-img{
     display: flex;
-    width: 70%;
+    justify-content: center;
+    width: 50%;
 }
 .contenedor-img img {
     border-radius: 50%;
     width: 50%;
 
-}  */
+} 
 
 .contenedor-datos {
     display: flex;
     flex-direction: column;
     font-size: 1.5em;
+    width: 50%;
 }
 
+
+
+
+
+
+/*MAIN ACTIVIDADES*/
+.main-actv {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.container-info {
+    width: 60%;
+    padding: 4%;
+    background-color: #faeaea
+
+}
+.container-gallery{
+    width: 50%;
+    margin: 7%;
+    padding: 1%;
+    padding-top: 0%;
+}
+.gallery-row {
+    display: flex;
+    padding: 1%;
+
+}
+.gallery-column {
+    flex: 25%;
+    padding: 1%;
+
+}
+.gallery-column img {
+    width: 100%;
+    margin-top: 1%;
+    padding: 1%;
+
+}
+.gallery-column img:hover {
+    transform: scale(2);
+    transition: all 0.4s ease-in-out;
+    border-radius: 12%;
+}
 
 
 
@@ -289,6 +332,7 @@ footer{
         text-decoration: none;
 
     }
+
 
 
 }
