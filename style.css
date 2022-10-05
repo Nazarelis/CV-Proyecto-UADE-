@@ -136,6 +136,7 @@ main{
     gap: 5%;
     width: 100%;
     align-items: center;
+    margin-bottom: 4%;
 }
 
 .contenedor-img{
@@ -154,6 +155,20 @@ main{
     flex-direction: column;
     font-size: 1.5em;
     width: 50%;
+}
+
+.sect-cont {
+    padding-top: 30%;
+    width: 100%;
+    background-color: #e5989b;
+    height: 10%;
+}
+.sect-cont img {
+    width: 10%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -236,7 +251,7 @@ footer{
     width: 10%;
 }
 
-.footer-redes a{
+.footer-redes a {
     display: flex;
     text-decoration: none;
     font-size: 1.2em;
@@ -338,7 +353,7 @@ footer{
 }
 
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 450px) {
     main{
         display: flex;
         position: relative;
