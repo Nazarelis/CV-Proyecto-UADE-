@@ -155,21 +155,36 @@ main{
     flex-direction: column;
     font-size: 1.5em;
     width: 50%;
+
 }
 
 .sect-cont {
-    padding-top: 30%;
-    width: 100%;
+    padding: 5%;
     background-color: #e5989b;
-    height: 10%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
 }
 .sect-cont img {
-    width: 10%;
+    width: 40%;
     height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    border-radius: 50%;
 }
+.sect-cont img:hover{
+    transform: scale(1.4);
+    transition: all 0.2s ;
+}
+
+.contenedor-section_three {
+    width: 100%;
+    padding-top: 4%;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    font-size: 1.3em;
+}
+
 
 
 
