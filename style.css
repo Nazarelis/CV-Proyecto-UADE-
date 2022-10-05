@@ -174,6 +174,8 @@ main{
 .sect-cont img:hover{
     transform: scale(1.4);
     transition: all 0.2s ;
+    filter: brightness(125%);
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
 .contenedor-section_three {
@@ -183,6 +185,7 @@ main{
     display: flex;
     align-items: center;
     font-size: 1.3em;
+
 }
 
 
